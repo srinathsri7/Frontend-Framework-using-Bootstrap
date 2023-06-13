@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Taste Trendy</title>
+<link rel="stylesheet" type="text/css" href="ord.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+#navi{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 20px;
+  padding: .5rem 5rem;
+  background: black;
+}
+.navbar .navbar-brand{
+  font-size: 25px;
+  font-weight: 800;
+  color: #29f700 !important;
+}
+#navbarSupportedContent a{
+  color: #fff !important;
+  border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+  border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{
+  background: #29f700;
+  border-radius: 15px
+}
+section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home{
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)), url(https://static.toiimg.com/photo/72023714.cms);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+#home h1{
+  color: #fff;
+  font-size: 100px;
+  text-shadow: 0px 1px 0px #ccc,
+               0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc,
+                 0px 7px 0px #ccc;
+}
+#home p{
+  color: #fff;
+  font-size: 30px;
+}
+#home .input-group{
+  width: 40%;
+  height: 45px;
+}
+#home button{
+  background-color: #29f700;
+  color: #fff;
+  border-radius: 15px;
+}
+/*about*/
+#about{
+  background: linear-gradient(#E1B907,#E1B907 100%);
+}
+#about h1{
+  color:#fff;
+}
+#about p{
+  color: #fff;
+}
+/*product*/
+#product{
+  background-color: #878580;
+}
+#product h1{
+  font-weight: 700;
+  color: #fff;
+}
+.card{
+  background: #e5e5e5 !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+  inset 4px 4px 10px white;
+  border-radius: 20px !important;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px;
+  transition: .2s;
+}
+.card:hover{
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+  inset -4px -4px 10px white;
+  transition: .2s;
+}
+#contact button{
+  color: #29f700;
+  background: black;
+}
+
+ 
+
+  </style>
+}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" id="navi">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">Taste Trendy</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#home">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#product">Products</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#about">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#contact">Contact US</a>
+</li>
+</ul>
+<button class="btn btn-outline-success" type="submit">Sign Up</button>
+</div>
+</div>
+</nav>
+<!-- home -->
+<section id="home">
+<h1 class="text-center">INTERNATIONAL CUISINE</h1>
+<p>The only thing we're serious about is food</p>
+<div class="input-group m-4">
+<input type="text" class="form-control" placeholder="Email Address">
+<button class="btn signin">Get started</button>
+</div>
+</section>
+
+ 
+
+<!-- product -->
+<section id="product">
+<div class="container m-5">
+<h1 class="text-center my-5">Non VEGETARIAN</h1>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/xrqfchsaqeosgika6avq" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Biryani</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/63/2020/03/GettyImages-1051749178-scaled.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Chicken Noodles</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://thumbs.dreamstime.com/b/veg-schezwan-fried-rice-black-bowl-dark-slate-background-indo-chinese-cuisine-dish-veg-schezwan-fried-rice-black-bowl-159831814.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Chicken Fried Rice</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://media.istockphoto.com/photos/kerala-parotta-popularly-known-as-paratha-or-porotta-is-a-delicacy-picture-id1205482203?k=6&m=1205482203&s=612x612&w=0&h=JI93MAJUktyH0DKLgCVVNaaJpFGK0kb7BWZk1X6Kno8=" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Parotta</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://t3.ftcdn.net/jpg/01/93/91/32/360_F_193913273_m18uxjyykl65LMtM4bC5FBHxGB14grbJ.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Chicken 65</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://i.ytimg.com/vi/2K_GE4dMRrM/maxresdefault.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Honey Garlic Chicken</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://mainkart.com/wp-content/uploads/2020/10/Grill-Chicken-Full.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Grill Chicken</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://media.istockphoto.com/photos/chicken-wrap-picture-id888366454?k=6&m=888366454&s=612x612&w=0&h=P0w-97Q5ljBt4Wztx30JCbiqayHIgne8Hw95-M8MQZE=" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Chicken Shawarma</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_760,q_auto:best,w_1140/v1567710256/cms_recipe_featured_image/wbqpuatbgctugjdzjmee.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Chicken Tandoori</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- uguyug -->
+<!-- gygjghj -->
+<!-- hgjgjghj -->
+<section id="product">
+<div class="container m-5">
+<h1 class="text-center my-5">VEGETARIAN</h1>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://recipesofhome.com/wp-content/uploads/2020/04/gobi-manchurian-recipe-30.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Gobi Manchurian</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://www.allchickenrecipes.com/wp-content/uploads/2018/11/Chicken-Fried-Rice.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Gobi Fried Rice</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWhEloUABtHom6qoIwcMBvaV17DwjVIWiHucLALMAwYY0AYVjNoGbAtbK-8hKyQ8s2Gn8&usqp=CAU" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Paneer Biryani</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://media.istockphoto.com/photos/kerala-parotta-popularly-known-as-paratha-or-porotta-is-a-delicacy-picture-id1205482203?k=6&m=1205482203&s=612x612&w=0&h=JI93MAJUktyH0DKLgCVVNaaJpFGK0kb7BWZk1X6Kno8=" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Parotta</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/06/sambar-rice-recipe.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Sambar Rice</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://i2.wp.com/cookingfromheart.com/wp-content/uploads/2017/05/Chettinad-Mushroom-Biryani-4.jpg?fit=1024%2C683&ssl=1" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Mushroom Biryani</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wiyxmeviesaczslplnrq" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Idli</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://wallpapercave.com/wp/wp6734909.jpg" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Dosa</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+<img src="https://media.istockphoto.com/photos/paneer-butter-masala-with-chapati-roti-paratha-picture-id545997902?k=6&m=545997902&s=612x612&w=0&h=qvR3ghIpe8N4NkFhoZzJKCfrIdGEc0KP58e4NoyP9TA=" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Paneer Roti</h5>
+<a href="#" class="btn btn-primary">ADD</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+ 
+
+<!-- About -->
+<section id="about">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-6 col-md-6 c0l-12 my-5">
+<img src="https://media.istockphoto.com/photos/certified-100-organic-product-logo-picture-id533582984?s=612x612" class="img-fluid">
+</div>
+<div class="col-lg-6 col-md-6 c0l-12  p-lg-5 p-2 my-5">
+<h1>ABOUT US</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+</div>
+</div>
+</section>
+
+ 
+
+<!-- contact -->
+
+ 
+
+<section id="contact">
+<div class="container m-5">
+<h1 class="text-center my-5">How Can We Help You ?</h1>
+<hr>
+<div class="mb-3">
+<label for="exampleFormControlInput1" class="form-label">Email address</label>
+<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+</div>
+<div class="mb-3">
+<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<br>
+<button class="btn">Send</button>
+</div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
